@@ -1,0 +1,79 @@
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+.info__wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .info__wrap {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+.info__head {
+  max-width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .info__head {
+    width: 50.6rem;
+  }
+}
+.info__head h2 + p {
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .info__head h2 + p {
+    margin-top: 1rem;
+  }
+}
+.info__head p {
+  max-width: 41.2rem;
+  font-family: Inter;
+}
+@media only screen and (min-width: 768px) {
+  .info__head p {
+    font-size: 1.8rem;
+  }
+}
+.info__head .bttn {
+  margin-top: 5rem;
+}
+@media only screen and (max-width: 768px) {
+  .info__head .bttn {
+    margin-top: 3rem;
+  }
+}
+.info__content {
+  max-width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .info__content {
+    width: 54.5rem;
+  }
+}

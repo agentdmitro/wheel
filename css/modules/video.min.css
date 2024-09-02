@@ -1,0 +1,131 @@
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0) translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+.video-frame {
+  border-radius: 0.4rem;
+  overflow: hidden;
+  cursor: pointer;
+  height: 100%;
+  max-height: max-content;
+}
+.video-frame img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.2s linear;
+}
+.video-frame .iframe {
+  width: 100%;
+  display: block;
+  padding-bottom: 48.431%;
+  z-index: -1;
+}
+.video-frame.video-play .iframe {
+  z-index: 10;
+}
+.video-frame iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s linear;
+}
+.video-frame:before {
+  content: "";
+  display: block;
+  width: 13.4rem;
+  height: 13.4rem;
+  border-radius: 50%;
+  background-color: var(--white);
+  z-index: 1;
+  position: absolute;
+  margin: 0 auto;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease;
+  background: url(../img/icons/spin.svg) center/contain no-repeat;
+  animation: spin 30s linear infinite;
+}
+@media only screen and (max-width: 768px) {
+  .video-frame:before {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+.video-frame:after {
+  content: "";
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  background: url(../img/icons/play.svg) center/cover no-repeat;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease;
+  transform-origin: 0 0;
+}
+@media only screen and (max-width: 768px) {
+  .video-frame:after {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+.video-frame:hover:before, .video-frame:hover:after {
+  transform: scale(1.05) translate(-50%, -50%);
+}
+.video-frame:hover::after {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.video-frame:active:before, .video-frame:active:after {
+  transform: scale(0.95) translate(-50%, -50%);
+}
+.video-frame.video-play:before, .video-frame.video-play:after {
+  opacity: 0;
+}
+.video-frame.video-play iframe {
+  opacity: 1;
+}

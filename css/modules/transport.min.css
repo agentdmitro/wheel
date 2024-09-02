@@ -1,0 +1,52 @@
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+.transport__images {
+  margin-top: 4rem;
+  gap: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 768px) {
+  .transport__images {
+    gap: 0.5rem;
+  }
+}
+.transport__image:not(:first-child) {
+  flex: calc(50% - 0.6rem);
+}
+@media only screen and (max-width: 768px) {
+  .transport__image:not(:first-child) {
+    flex: calc(50% - 0.25rem);
+  }
+}
+.transport__image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

@@ -1,0 +1,63 @@
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+.form {
+  margin-top: 1rem;
+  background: url(../img/form/bg.svg) center/cover no-repeat var(--black);
+  padding: 8rem 0;
+  text-align: center;
+  color: var(--white);
+}
+@media only screen and (max-width: 768px) {
+  .form {
+    padding: 6rem 0;
+  }
+}
+.form h3 {
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.form__wrap {
+  max-width: 94rem;
+  margin: 0 auto;
+}
+.form form {
+  max-width: 36.4rem;
+  margin: 6rem auto 0;
+}
+@media only screen and (max-width: 768px) {
+  .form form {
+    max-width: 25rem;
+    margin-top: 3rem;
+  }
+}
+.form form button {
+  position: absolute;
+  right: 0.6rem;
+  top: 0.6rem;
+}

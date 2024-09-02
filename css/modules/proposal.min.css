@@ -1,0 +1,112 @@
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+:root {
+  --main-color: #ff4b03;
+  --black: #000;
+  --gray: #f2f2f2;
+  --white: #fff;
+  --secondary-color: #c2ef18;
+  --gray-dark: #c7cbcf;
+}
+
+.proposal {
+  max-width: 192rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.proposal h3 {
+  text-transform: uppercase;
+}
+.proposal .swiper {
+  margin-top: 3.4rem;
+  overflow: visible;
+  clip-path: inset(-100vw -100vw -100vw 0rem);
+}
+@media only screen and (max-width: 768px) {
+  .proposal .swiper {
+    margin-top: 2rem;
+  }
+}
+.proposal .swiper-slide {
+  width: 26.5rem;
+  height: auto;
+}
+.proposal .swiper-slide .product__card {
+  width: 100%;
+}
+@media only screen and (max-width: 576px) {
+  .proposal .swiper-slide {
+    width: 23rem;
+  }
+}
+.proposal__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.4rem;
+  gap: 2rem;
+}
+@media only screen and (max-width: 576px) {
+  .proposal__nav {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.proposal__nav-arrows {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .proposal__nav-arrows {
+    width: 100%;
+  }
+}
+.proposal .swiper-pagination {
+  display: block;
+  width: 55.3rem;
+  height: 0.2rem;
+  background-color: var(--gray);
+}
+@media only screen and (max-width: 768px) {
+  .proposal .swiper-pagination {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .proposal .swiper-pagination.desktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .proposal .swiper-pagination.mob {
+    display: none;
+  }
+}
+.proposal .swiper-pagination-progressbar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: left top;
+  background-color: var(--main-color);
+  z-index: 2;
+}
